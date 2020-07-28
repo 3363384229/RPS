@@ -1,0 +1,17 @@
+﻿REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则以下条目将
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\RPS.Application = RPS Application
+
+
+HKEY_CLASSES_ROOT\RPS.Application\CLSID = {85742e78-9a4e-4cbd-86ae-64efe816eb97}
+
+HKEY_CLASSES_ROOT\CLSID\{85742e78-9a4e-4cbd-86ae-64efe816eb97} = RPS Application
+HKEY_CLASSES_ROOT\CLSID\{85742e78-9a4e-4cbd-86ae-64efe816eb97}\ProgId = RPS.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{85742e78-9a4e-4cbd-86ae-64efe816eb97}\LocalServer32 = RPS.EXE

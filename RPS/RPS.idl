@@ -1,0 +1,29 @@
+﻿// RPS.idl: RPS.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(RPS.tlb)。
+
+[ uuid(3b2ee073-f23e-4a7a-8698-9c7c5332c85f), version(1.0) ]
+library RPS
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CRPSDoc 的主调度接口
+
+	[ uuid(42a5e17a-3e00-4e1a-a0ef-eef54bbfe211) ]
+	dispinterface IRPS
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CRPSDoc 的类信息
+
+	[ uuid(85742e78-9a4e-4cbd-86ae-64efe816eb97) ]
+	coclass RPS
+	{
+		[default] dispinterface IRPS;
+	};
+};
